@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout style="@style/resultContainer">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@+id/resultText" style="@style/resultText"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/mainContainer">
+
+        <LinearLayout style="@style/cardsContainer">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/funcC"
+                style="@style/funcCard"
+                android:layout_width="301dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/numText"
+                    android:layout_width="288dp"
+                    android:text="@string/funcC" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/funcDivision"
+                style="@style/funcCard"
+                android:layout_width="130dp"
+                android:layout_height="95dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/numText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/funcDivision"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/cardsContainer">
+            <androidx.cardview.widget.CardView android:id="@+id/num7" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num7" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/num8" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num8" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/num9" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num9" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/funcMultiplication" android:layout_weight="1" style="@style/funcCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/funcMultiplication" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/cardsContainer">
+            <androidx.cardview.widget.CardView android:id="@+id/num4" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num4" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/num5" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num5" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/num6" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num6" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/funcSubtraction" android:layout_weight="1" style="@style/funcCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/funcSubtraction" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/cardsContainer">
+            <androidx.cardview.widget.CardView android:id="@+id/num1" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num1" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/num2" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num2" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/num3" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/num3" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/funcAddition" android:layout_weight="1" style="@style/funcCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/funcAddition" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout style="@style/cardsContainer">
+            <androidx.cardview.widget.CardView android:id="@+id/num0" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:id="@+id/txt0" android:text="@string/num0" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/funcDecimal" android:layout_weight="1" style="@style/numCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/funcDecimal" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/funcEquals" android:layout_weight="2" style="@style/funcCard">
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/funcEquals" style="@style/numText"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
